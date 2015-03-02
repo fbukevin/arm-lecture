@@ -21,3 +21,10 @@ clean:
 
 qemu: example3
 	qemu-arm -L /usr/arm-linux-gnueabihf ./example3
+qemu2: example3_1
+	qemu-arm -L /usr/arm-linux-gnueabihf ./example3_1
+qemu3: example3_2
+	qemu-arm -L /usr/arm-linux-gnueabihf ./example3_2
+
+
+	
