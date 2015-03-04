@@ -17,7 +17,7 @@ example5.o: example5.c
 	$(CC) -c $(CFLAGS) $(LDFLAGS) -o $@ $<
 
 clean:
-	rm -f $(objects) example5
+	rm -f $(objects) example5 example5_1 example5_2 example5_3
 
 qemu:
 	qemu-arm -L /usr/arm-linux-gnueabihf ./example5
