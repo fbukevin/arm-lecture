@@ -14,7 +14,7 @@ fibonacci:
 	push {r3, r4, r5, lr}
 
 	@ match algorithm if(x<=0) return 0;
-	subs r4, r0, #0 		@R4 = R0 - 0 (update flags)
+	subs r4, r0, #0 		@R4 = R0 - 0 (update flags, also copy passed value)
 	ble .L3				@ if(R0 <= 0) goto .L3 (which returns 0)	
 
 	@ match algorithm if(x==1) return 1;
